@@ -1,6 +1,7 @@
 ---
 permalink: /
-title:
+title: "Heng Xu"
+description: "Heng Xu's personal homepage — research on AI infrastructure, networking systems, data center networks, edge computing, and embedded systems."
 author_profile: false
 redirect_from:
   - /about/

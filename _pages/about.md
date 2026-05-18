@@ -50,6 +50,9 @@ redirect_from:
         {% for post in dc_cloud_publications %}
           <article class="publication-card">
             <h3 class="publication-card__title">
+              {% if post.status == "submission" %}
+                <span class="publication-card__status-badge">[Under Review]</span>
+              {% endif %}
               {% if post.paperurl %}
                 <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
               {% else %}
@@ -71,10 +74,17 @@ redirect_from:
         {% for post in edge_terminal_publications %}
           <article class="publication-card">
             <h3 class="publication-card__title">
-              {% if post.paperurl %}
-                <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
+              {% if post.status == "submission" %}
+                <span class="publication-card__status-badge">[Under Review]</span>
+              {% endif %}
+              {% if post.status == "submission" %}
+                {{ post.title }}
               {% else %}
-                <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+                {% if post.paperurl %}
+                  <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
+                {% else %}
+                  <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+                {% endif %}
               {% endif %}
             </h3>
             {% if post.excerpt %}

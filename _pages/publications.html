@@ -7,21 +7,42 @@ author_profile: false
 
 {% include base_path %}
 
-<div class="publication-cards">
-  {% assign sorted_publications = site.publications | sort: "date" | reverse %}
-  {% for post in sorted_publications %}
-    <article class="publication-card">
-      <h3 class="publication-card__title">
-        {% if post.paperurl %}
-          <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
-        {% else %}
-          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+<div class="home-selected-pubs__group">
+  <h3 class="home-selected-pubs__group-title">Under Review</h3>
+  <div class="publication-cards">
+    {% assign submissions = site.publications | where: "status", "submission" | sort: "date" | reverse %}
+    {% for post in submissions %}
+      <article class="publication-card">
+        <h3 class="publication-card__title">
+          <span class="publication-card__status-badge">[Under Review]</span> {{ post.title }}
+        </h3>
+        {% if post.excerpt %}
+          <p class="publication-card__authors">{{ post.excerpt }}</p>
         {% endif %}
-      </h3>
-      {% if post.excerpt %}
-        <p class="publication-card__authors">{{ post.excerpt }}</p>
-      {% endif %}
-      <p class="publication-card__venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-    </article>
-  {% endfor %}
+        <p class="publication-card__venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="home-selected-pubs__group">
+  <h3 class="home-selected-pubs__group-title">Published</h3>
+  <div class="publication-cards">
+    {% assign published = site.publications | where_exp: "item", "item.status != 'submission'" | sort: "date" | reverse %}
+    {% for post in published %}
+      <article class="publication-card">
+        <h3 class="publication-card__title">
+          {% if post.paperurl %}
+            <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
+          {% else %}
+            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+          {% endif %}
+        </h3>
+        {% if post.excerpt %}
+          <p class="publication-card__authors">{{ post.excerpt }}</p>
+        {% endif %}
+        <p class="publication-card__venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+      </article>
+    {% endfor %}
+  </div>
 </div>

@@ -1,0 +1,27 @@
+---
+layout: archive
+title:
+permalink: /publications/
+author_profile: false
+---
+
+{% include base_path %}
+
+<div class="publication-cards">
+  {% assign sorted_publications = site.publications | sort: "date" | reverse %}
+  {% for post in sorted_publications %}
+    <article class="publication-card">
+      <h3 class="publication-card__title">
+        {% if post.paperurl %}
+          <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
+        {% else %}
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+        {% endif %}
+      </h3>
+      {% if post.excerpt %}
+        <p class="publication-card__authors">{{ post.excerpt }}</p>
+      {% endif %}
+      <p class="publication-card__venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+    </article>
+  {% endfor %}
+</div>

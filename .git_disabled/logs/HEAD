@@ -1,0 +1,10 @@
+0000000000000000000000000000000000000000 4f52d97e1708a72f0bf040f476c58a5e9749f710 jhlxp <876477442@qq.com> 1778040201 +0800	clone: from https://github.com/jhlxp/jhlxp.github.io.git
+4f52d97e1708a72f0bf040f476c58a5e9749f710 5fbe88183abbabf9e295309fb67d483f4b16e08c jhlxp <876477442@qq.com> 1778051604 +0800	commit: Customize homepage layout, publications, and profile content
+5fbe88183abbabf9e295309fb67d483f4b16e08c 118d714417a15301010fa33dd27c60f5931fd608 jhlxp <876477442@qq.com> 1778052021 +0800	commit: Fix production site URL and repository settings
+118d714417a15301010fa33dd27c60f5931fd608 9a9499e7fe7d12812605f185df2c751def90c693 jhlxp <876477442@qq.com> 1778052427 +0800	commit: Add cache-busting version to CSS and JS assets
+9a9499e7fe7d12812605f185df2c751def90c693 b438174f5a49f4ea0dbcd70d08df6c59d5addbfd jhlxp <876477442@qq.com> 1778052808 +0800	commit: Use searchable plain text for profile name and profile links
+b438174f5a49f4ea0dbcd70d08df6c59d5addbfd 4190d79b51a086e10c499cb0c2fdad08df6ea9f3 jhlxp <876477442@qq.com> 1778052879 +0800	commit: Improve searchability with plain site and profile text
+4190d79b51a086e10c499cb0c2fdad08df6ea9f3 639368a377376f9222cabd660b6f0a50edf8d2a3 jhlxp <876477442@qq.com> 1778052921 +0800	commit: Set site title to Heng Xu's Homepage
+639368a377376f9222cabd660b6f0a50edf8d2a3 36a92a38242ded0054084c4a8a21c428ba33026f jhlxp <876477442@qq.com> 1778052963 +0800	commit: Style profile name and links with cursive font while keeping plain text
+36a92a38242ded0054084c4a8a21c428ba33026f da148233ba381df7bd5a703ee5c560ae7649eebf jhlxp <876477442@qq.com> 1778053549 +0800	commit: update
+da148233ba381df7bd5a703ee5c560ae7649eebf 3e29dbc120d7b5f51d22b936d11e26af5582c5b2 jhlxp <876477442@qq.com> 1778053870 +0800	commit: update

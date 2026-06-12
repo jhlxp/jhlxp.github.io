@@ -35,7 +35,7 @@ redirect_from:
   -->
   <div class="home-intro-text">
     <p>
-      I received my B.E. and M.E. degrees from Beijing Jiaotong University, where my research focused on networking systems. My current research interests span AI infrastructure, scalable systems, and data center networks, with a focus on topology, routing, load balancing, congestion control, scheduling, and placement. I also work on edge computing and embedded systems, including edge intelligence and efficient edge transport. My current collaborator and mentor is <a href="https://franklee94.github.io/" target="_blank" rel="noopener noreferrer" class="home-intro-text__mentor-link">Prof. Jialong Li</a>.
+      I received my B.E. and M.E. degrees from Beijing Jiaotong University, where my research focused on networking systems. My current research interests span AI infrastructure, scalable systems, and data center networks, with a focus on topology, routing, load balancing, congestion control, scheduling, and placement. I also work on edge computing and embedded systems, including edge intelligence and efficient edge transport. My current collaborators and mentors are <a href="https://franklee94.github.io/" target="_blank" rel="noopener noreferrer" class="home-intro-text__mentor-link">Prof. Jialong Li</a> and <a href="https://chenxing-xuan.github.io/" target="_blank" rel="noopener noreferrer" class="home-intro-text__mentor-link">Lect. Jialong Sun</a>.
     </p>
   </div>
 

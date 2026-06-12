@@ -23,7 +23,7 @@ author_profile: false
         {% if post.excerpt %}
           <p class="publication-card__authors">{{ post.excerpt }}</p>
         {% endif %}
-        <p class="publication-card__venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+        <p class="publication-card__venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% unless post.venue == "Submission" %}, submission{% endunless %}</p>
       </article>
     {% endfor %}
   </div>

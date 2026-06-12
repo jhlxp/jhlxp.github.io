@@ -122,6 +122,15 @@ redirect_from:
     </ul>
   </section>
 
+  <section class="home-awards">
+    <h2>Awards</h2>
+    <ul class="home-education__list">
+      <li class="home-education__item">
+        <div class="home-education__line"><span class="home-education__period-inline">2024</span>, National Scholarship, China</div>
+      </li>
+    </ul>
+  </section>
+
   <!--
   <div class="home-intro-float__photo">
     <div class="home-intro-float__photo-placeholder">Photo</div>

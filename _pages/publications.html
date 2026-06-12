@@ -10,7 +10,7 @@ author_profile: false
 <div class="home-selected-pubs__group">
   <h3 class="home-selected-pubs__group-title">Preprints</h3>
   <div class="publication-cards">
-    {% assign submissions = site.publications | where: "status", "submission" | where_exp: "item", "item.display != false" | sort: "date" | reverse %}
+    {% assign submissions = site.publications | where: "status", "submission" | sort: "date" | reverse %}
     {% for post in submissions %}
       <article class="publication-card">
         <h3 class="publication-card__title">
@@ -32,7 +32,7 @@ author_profile: false
 <div class="home-selected-pubs__group">
   <h3 class="home-selected-pubs__group-title">Published</h3>
   <div class="publication-cards">
-    {% assign published = site.publications | where_exp: "item", "item.status != 'submission' and item.display != false" | sort: "date" | reverse %}
+    {% assign published = site.publications | where_exp: "item", "item.status != 'submission'" | sort: "date" | reverse %}
     {% for post in published %}
       <article class="publication-card">
         <h3 class="publication-card__title">

@@ -14,7 +14,6 @@ author_profile: false
     {% for post in submissions %}
       <article class="publication-card">
         <h3 class="publication-card__title">
-          <span class="publication-card__status-badge">[Under Review]</span>
           {% if post.paperurl %}
             <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
           {% else %}
